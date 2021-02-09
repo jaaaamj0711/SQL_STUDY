@@ -27,3 +27,7 @@ SELECT job_id,
     LTRIM(job_id, 'F') LTRIM적용결과,
     RTRIM(job_id, 'T') RTRIM적용결과
 FROM employees;
+
+--// TRIM: 공백 제거(단, 문자열 중간에 있는 공백은 제거할 수 없음 주의!!)
+SELECT 'start'||TRIM('    - space -    ')||'end'
+FROM dual;
